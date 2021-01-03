@@ -13,7 +13,7 @@ A noté que la page admin n'est accéssible que via le lien direct (l'url vers l
 
 
 
-Collaborateurs:
+Collaborateurs :
 ======
 
 Alexandre ELISABETH - [0Blanck0](https://github.com/0Blanck0/),  
