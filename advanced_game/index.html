@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+
+        <title>Dungeon Clicker - Advanced</title>
+
+        <script src="js/script.js" async></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="header_time">
+                <div class="header_row">
+
+                    <div class="current_time_container header_container">
+                        <p>Current time past on game:<br><span id="current_time_id">00:00:00</span></p>
+                    </div>
+
+                    <div class="game_time_container header_container">
+                        <p>Total time past on game:<br><span id="total_time_id">00:00:00</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="nav_row">
+                <div class="header_container">
+                    <button id="reset_btn" class="header_btn" alt="RESET"></button>
+                </div>
+
+                <div class="header_container">
+                    <button id="rebirth_btn" class="header_btn" alt="REBIRTH"></button>
+                </div>
+
+                <div class="header_container">
+                    <button id="save_btn" class="header_btn" alt="SAVE"></button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="container">
+                <div class="minions">
+                    <h5>Minions</h5>
+
+                    <div class="minions_container">
+                        <div class="minions_content">
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>GPS</td>
+                                        <td>Level</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="m_container">
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="container">
+                <div class="main_content">
+                    
+                    <h1>Dungeon Clicker</h1>
+
+                    <div class="info_container">
+                        <section>
+                            <div>
+                                <h4>Floor <span id="floor_section_id">1</span></h4>
+                            </div>
+                        </section>
+    
+                        <section>
+                            <div>
+                                <h4><span id="gold_section_id">0</span> Golds</h4>
+                            </div>
+                        </section>
+    
+                        <section>
+                            <div>
+                                <h4><span id="gps_section_id">0</span> Golds per second</h4>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <button id="click_btn" class="main_btn" alt="CLICK"></button>
+
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="container">
+                <div class="shop">
+                    <h5>Shop</h5>
+
+                    <div class="shop_container">
+                        <div class="shop_content">
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>GPS</td>
+                                        <td>Cost</td>
+                                        <td>Buy</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="s_container">
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+    </body>
+</html>

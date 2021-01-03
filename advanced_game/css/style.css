@@ -1,0 +1,336 @@
+html {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(216, 216, 216, 0.733);
+    z-index: 150;
+}
+
+.header_time {
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.header_row {
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+}
+
+.nav_row {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    margin-right: 0;
+}
+
+.header_container {
+    display: block;
+    height: 100%;
+    width: 100px;
+    margin: auto;
+}
+
+.current_time_container, .game_time_container {
+    width: 200px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.separator {
+    width: 16px;
+    height: 100%;
+    z-index: 100;
+    display: block;
+    background-image: url("../img/bois.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: block;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100px;
+    margin: 0;
+}
+
+.main_content {
+    display: flow-root;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url("../img/dungeon-keeper-key-art.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shop {
+    display: flow-root;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url("../img/shop.png");
+    background-size: cover;
+    background-position: right;
+    font-size: 40px;
+    color: white;
+}
+
+.minions {
+    display: flow-root;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url("../img/minions.jpg");
+    background-size: cover;
+    background-position: right;
+    font-size: 40px;
+    color: white;
+}
+
+.shop_container, .minions_container, .info_container {
+    width: 320px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    margin: auto;
+    text-align: -webkit-center;
+}
+
+.shop_container, .minions_container {
+    height: auto;
+    min-height: 300px;
+}
+
+.info_container {
+    height: 300px;
+    height: auto;
+}
+
+.shop_content, .minions_content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #FFF;
+    font-family: fantasy;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+h4 {
+    color: #FFF;
+    text-align: left;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+}
+
+h5 {
+    text-align: center;
+    font-size: 40px;
+    color: #FFF;
+    text-decoration: underline;
+    text-decoration-color: #410101;
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h6 {
+    color: #FFF;
+    text-align: center;
+    margin: auto;
+}
+
+.main_btn {
+    background-color: #000;
+    font-size: 40px;
+    text-align: center;   
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    color: #FFF;
+    border-color: #000;
+    margin-top: 70px;
+}
+
+table {
+    width: inherit;
+    height: 100%;
+    margin: auto;
+    font-size: 20px;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+table thead {
+    margin: auto;
+    color: #FFF;
+    text-decoration: underline;
+    text-decoration-color: #940101;
+}
+
+table thead tr {
+    border-bottom: 1px solid #000;
+    border-color: #000;
+    text-align: center;
+    margin: auto;
+}
+
+table thead tr td {
+    border-right: 1px solid #000;
+    text-align: inherit;
+    margin: auto;
+    padding: 5px;
+}
+
+table thead tr td:last-child {
+    border: none;
+}
+
+table tbody {
+    margin: auto;
+    color: #FFF;
+}
+
+table tbody tr {
+    margin: auto;
+    height: 36px;
+}
+
+table tbody tr td {
+    margin: auto;
+    border-right: 1px solid #000;
+    text-align: inherit;
+}
+
+table tbody tr td:last-child {
+    border-right: none;
+}
+
+button {
+    margin: auto;
+    width:calc(80px + 6px);
+    height:calc(2vw + 6px);
+    background: linear-gradient(to right, #940101, #410101, #080000);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+button::after {
+    content: attr(alt);
+    width: 80px;
+    height: 2vw;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_btn {
+    color: rgb(56, 56, 56);
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(to right, #FFF, rgb(153, 153, 153), rgb(68, 68, 68));
+    width:calc(70px + 5px);
+    height:calc(2vw + 5px);
+    margin: auto;
+    text-align: center;
+}
+
+.header_btn::after {
+    width: 70px;
+    height: 2vw;
+}
+
+
+.buy_btn {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    width:calc(40px + 6px);
+    height:calc(2vw + 6px);
+}
+
+.buy_btn::after {
+    width: 40px;
+    height: 2vw;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background: linear-gradient(to right, #6e0101, #290000, #000000);
+    transform: scale(0.9);
+}
+
+.header_btn:active {
+    background: linear-gradient(to right, rgb(196, 196, 196), rgb(114, 114, 114), rgb(32, 32, 32));
+}
+
+button:hover {
+    animation: slidebg 3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+}
+
+.header_btn:hover {
+    animation: slidebg 3s linear infinite;
+}
+
+.buy_btn:hover {
+    animation: slidebg 10s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 30vw;
+    }
+}
