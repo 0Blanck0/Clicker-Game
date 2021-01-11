@@ -17,4 +17,4 @@ Collaborateurs :
 ======
 
 Alexandre ELISABETH - [0Blanck0](https://github.com/0Blanck0/),  
-Fanny GARDE - [](https://github.com/0Blanck0/Theme-Shopify)  
+Fanny GARDE - [](https://github.com/0Blanck0/)  
