@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+    background: linear-gradient(#251430, #352455);
+    background-image: url("../img/shop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(10, 10, 10, 0.884);
+    border-radius: 10px;
+}
+
+.form_container h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.form_container .form_case {
+    position: relative;
+}
+
+.form_container .form_case input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.form_container .form_case label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.form_container .form_case input:focus ~ label,
+.form_container .form_case input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #a803f4;
+    font-size: 12px;
+}
+
+.btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submit_btn {
+    width:calc(6vw + 6px);
+    height:calc(2vw + 6px);
+    background: linear-gradient(to right, #660d8f, #6200ff);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.submit_btn:after {
+    content: attr(alt);
+    width: 6vw;
+    height: 2vw;
+    background-color: #543bad;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit_btn:active {
+    color: rgb(202, 68, 255);
+}
+
+.submit_btn:hover {
+    box-shadow: 0px 0px 51px 0px rgba(2,143,148,0.79);
+}
